@@ -5,7 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family:monospace;
+      }
+      body {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: rgb(241, 236, 220);
+      }
+
+      /* navbar */
+      .nav {
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .navgroup {
+        display: flex;
+      }
+      .navimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        min-width: 150px;
+      }
+      .navimg img {
+        height: 35px;
+      }
+      .navlogo img {
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        border-radius: 40px;
+      }
+      .navimg div {
+        font-weight: 500;
+        font-size: 18px;
+        padding: 0 5px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+      }
+      .navimg:hover {
+        transform: translateY(-2px);
+      }
+
+      /* header */
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header img {
+        border-radius: 20px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+        transition-duration: 0.2s;
+      }
+      header img:hover {
+        cursor: pointer;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+      }
+
+      /* items */
+      .ourmenu {
+        padding: 20px;
+      }
+      .ourmenutitle {
+        font-size: 40px;
+        font-weight: 600;
+        padding: 10px 20px;
+      }
+      .ourmenucards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .ourmenucard {
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        height: 180px;
+        width: 130px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        transition-duration: 0.1s;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px black;
+      }
+      .ourmenucard:hover {
+        box-shadow: 5px 5px 10px black;
+        transform: translateY(-10px);
+      }
+      .ourmenucard img {
+        width: auto;
+        height: 100px;
+        padding-bottom: 20px;
+      }
+      .ourmenucard div {
+        white-space: 2px;
+      }
+
+      /* menu  */
+      .items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        gap: 10vh;
+        margin: 50px 0;
+      }
+      .item {
+        width: 400px;
+        background-color: aliceblue;
+        height: 400px;
+        box-shadow: 1px 1px 2px black;
+        cursor: pointer;
+      }
+      .itemdetails {
+        padding: 10px;
+      }
+      .itemimage img {
+        width: 400px;
+        height: auto;
+      }
+      .itemtitle {
+        height: 45px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 18px;
+      }
+      .itemdetail {
+        height: 45px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 14px;
+      }
+      .buybar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        padding: 10px 20px;
+        height: 80px;
+      }
+      .price {
+        text-decoration: line-through;
+      }
+      .buybar button {
+        padding: 10px 15px;
+        height: fit-content;
+        font-size: 15px;
+        background-color: aquamarine;
+        border: 0;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px black;
+      }
+
+      /* footer */
+      .footer {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <nav class="nav">
@@ -189,7 +366,8 @@
         <div class="itemdetails">
           <h2 class="itemtitle">Chicken Whopper.</h2>
           <div class="itemdetail">
-            Our signature Whopper with 7 layers between the buns. Flame Grilled.....
+            Our signature Whopper with 7 layers between the buns. Flame
+            Grilled.....
           </div>
           <div class="buybar">
             <div class="MRP">₹ 129/-</div>
